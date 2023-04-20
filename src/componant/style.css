@@ -1,0 +1,565 @@
+.parent {
+   position: relative;
+   width: 100vw;
+   height: 90vh;
+ }
+ 
+ .header__section {
+   position: relative;
+   background-image: url(https://cdn.pixabay.com/photo/2021/05/25/09/51/road-6281973__340.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100vw;
+   height: 90vh;
+ }
+ 
+ .header__section .header__navigation {
+   padding: 18px 0;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   position: relative;
+   z-index: 99;
+ }
+ 
+ .header__section .header__navigation .header__logo {
+   width: 40%;
+ }
+ 
+ .header__section .header__navigation .header__logo__text {
+   font-size: 30px;
+   font-weight: bold;
+   color: #fff;
+   margin-top: -30px;
+ }
+ 
+ .header__section .header__navigation .header__nav {
+   text-align: right;
+   width: 50%;
+ }
+ 
+ .header__section .header__navigation .header__nav__list .list__item {
+   display: inline-block;
+   margin-left: -4px;
+   padding: 0 10px;
+ }
+ 
+ .header__section .header__navigation .header__nav__list .list__item__link {
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   padding: 10px 20px;
+   background-color: #03a84e;
+   font-weight: bold;
+   border: 2px solid transparent;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+ }
+ 
+ .header__section .header__navigation .header__nav__list .list__item__link:hover {
+   border: 2px solid #03a84e;
+   background-color: #fff;
+   color: #03a84e;
+ }
+ 
+ .header__content {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   width: 100%;
+   text-align: center;
+   z-index: 9955;
+ }
+ 
+ .header__content .content__heading {
+   font-size: 50px;
+   color: white;
+ }
+ 
+ .header__content .content__sub {
+   font-size: 25px;
+   margin-bottom: 39px;
+   color: white;
+ }
+ 
+ .header__content .content__form {
+   width: 100%;
+   outline: 10px solid #9097a4;
+   display: inline;
+   overflow: hidden;
+ }
+ 
+ .header__content .content__form input {
+   width: 20%;
+   border: none;
+   margin-right: -5px;
+   display: inline-block;
+   padding: 0 10px;
+   height: 55px;
+   font-size: 15px;
+   border-left: 2px solid #ddd;
+ }
+ 
+ .header__content .content__form input:focus-visible {
+   outline: none;
+ }
+ 
+ .header__content .content__form input:last-child {
+   background-color: #03a84e;
+   margin-top: 1px;
+ }
+ 
+ .header__content .content__form select {
+   width: 21%;
+   border: none;
+   margin-right: -5px;
+   display: inline-block;
+   padding: 0 10px;
+   height: 55px;
+   font-size: 15px;
+   border-left: 2px solid #ddd;
+ }
+ select:focus-visible{
+   outline:none;
+ }
+ 
+ .overly__div {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+ 
+ .service__item {
+   text-align: center;
+ }
+ 
+ .service__item:not(:last-child) {
+   padding: 100px 0 40px 0;
+ }
+ 
+ .service__item__card {
+   width: 23%;
+   height: 250px;
+   -webkit-box-shadow: 0 0 25px #e9f3f9;
+           box-shadow: 0 0 25px #e9f3f9;
+   padding: 30px 20px;
+   display: inline-block;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+ }
+ 
+ .service__item__card:not(:last-child) {
+   margin-right: 1%;
+ }
+ 
+ .service__item__card .card__icon {
+   position: relative;
+   width: 70px;
+   height: 70px;
+   margin: 0 auto;
+   color: #03a84e;
+   background-color: rgba(3, 168, 78, 0.1);
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   margin-bottom: 20px;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+ }
+ 
+ .service__item__card .card__icon i {
+   font-size: 25px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+ }
+ 
+ .service__item__card .card__heading {
+   font-size: 15px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+ }
+ 
+ .service__item__card:hover > .card__icon {
+   background-color: #03a84e;
+   color: white;
+ }
+ 
+ .service__item__card:hover {
+   -webkit-box-shadow: 0 0 35px #d5edfd;
+           box-shadow: 0 0 35px #d5edfd;
+ }
+ 
+ .gallery__section {
+   padding: 80px 0;
+ }
+ 
+ .img__hover__item-1 {
+   padding: 50px 2%;
+   text-align: center;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-1 {
+   width: 30%;
+   height: 300px;
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-1:not(:last-child) {
+   margin-right: 2%;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-1:hover > .img__overlay {
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   visibility: visible;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-1 .box__img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-1 .img__overlay {
+   width: 0%;
+   height: 0%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   text-align: center;
+   background-color: rgba(3, 168, 78, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-1 .img__overlay p {
+   position: absolute;
+   top: 49%;
+   left: 30%;
+   color: white;
+   font-weight: bold;
+   transition: all 0.1s;
+   -webkit-transition: all 0.1s;
+   -moz-transition: all 0.1s;
+   -ms-transition: all 0.1s;
+   -o-transition: all 0.1s;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-2 {
+   width: 30%;
+   height: 300px;
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-2:not(:last-child) {
+   margin-right: 2%;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-2:hover > .img__overlay {
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   visibility: visible;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-2 .box__img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-2 .img__overlay {
+   width: 0%;
+   height: 0%;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   text-align: center;
+   background-color: rgba(3, 168, 78, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-2 .img__overlay p {
+   position: absolute;
+   top: 49%;
+   left: 30%;
+   color: white;
+   font-weight: bold;
+   transition: all 0.1s;
+   -webkit-transition: all 0.1s;
+   -moz-transition: all 0.1s;
+   -ms-transition: all 0.1s;
+   -o-transition: all 0.1s;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-3 {
+   width: 30%;
+   height: 300px;
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-3:not(:last-child) {
+   margin-right: 2%;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-3:hover > .img__overlay {
+   height: 100%;
+   opacity: 1;
+   visibility: visible;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-3 .box__img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-3 .img__overlay {
+   width: 100%;
+   height: 0%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   text-align: center;
+   background-color: rgba(3, 168, 78, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+ }
+ 
+ .img__hover__item-1 .img__hover__box-3 .img__overlay p {
+   position: absolute;
+   top: 49%;
+   left: 30%;
+   color: white;
+   font-weight: bold;
+   transition: all 0.1s;
+   -webkit-transition: all 0.1s;
+   -moz-transition: all 0.1s;
+   -ms-transition: all 0.1s;
+   -o-transition: all 0.1s;
+ }
+ 
+ .img__hover__item-2 {
+   padding: 50px 2%;
+   text-align: center;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-1 {
+   width: 30%;
+   height: 300px;
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-1:not(:last-child) {
+   margin-right: 2%;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-1:hover > .img__overlay {
+   height: 100%;
+   opacity: 1;
+   visibility: visible;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-1 .box__img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-1 .img__overlay {
+   width: 100%;
+   height: 0%;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   text-align: center;
+   background-color: rgba(3, 168, 78, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-1 .img__overlay p {
+   position: absolute;
+   top: 49%;
+   left: 30%;
+   color: white;
+   font-weight: bold;
+   transition: all 0.1s;
+   -webkit-transition: all 0.1s;
+   -moz-transition: all 0.1s;
+   -ms-transition: all 0.1s;
+   -o-transition: all 0.1s;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-2 {
+   width: 30%;
+   height: 300px;
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-2:not(:last-child) {
+   margin-right: 2%;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-2:hover > .img__overlay {
+   width: 100%;
+   opacity: 1;
+   visibility: visible;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-2 .box__img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-2 .img__overlay {
+   width: 0%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   text-align: center;
+   background-color: rgba(3, 168, 78, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-2 .img__overlay p {
+   position: absolute;
+   top: 49%;
+   left: 30%;
+   color: white;
+   font-weight: bold;
+   transition: all 0.1s;
+   -webkit-transition: all 0.1s;
+   -moz-transition: all 0.1s;
+   -ms-transition: all 0.1s;
+   -o-transition: all 0.1s;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-3 {
+   width: 30%;
+   height: 300px;
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-3:not(:last-child) {
+   margin-right: 2%;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-3:hover > .img__overlay {
+   width: 100%;
+   opacity: 1;
+   visibility: visible;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-3 .box__img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-3 .img__overlay {
+   width: 0%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   right: 0;
+   text-align: center;
+   background-color: rgba(3, 168, 78, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   -webkit-animation-fill-mode: backwards;
+           animation-fill-mode: backwards;
+ }
+ 
+ .img__hover__item-2 .img__hover__box-3 .img__overlay p {
+   position: absolute;
+   top: 49%;
+   left: 30%;
+   color: white;
+   font-weight: bold;
+   transition: all 0.1s;
+   -webkit-transition: all 0.1s;
+   -moz-transition: all 0.1s;
+   -ms-transition: all 0.1s;
+   -o-transition: all 0.1s;
+ }
+ 
+ .footer__section {
+   text-align: center;
+   background-color: #03a84e;
+   padding: 15px 0;
+ }
+ 
+ .footer__section .footer__text {
+   color: #cecece;
+ }
+ /*# sourceMappingURL=style.css.map */
